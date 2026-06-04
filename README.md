@@ -22,7 +22,7 @@ This tool serves as a powerful graphical interface (GUI) wrapper for **yt-dlp**,
     * Separate Video + Audio extraction or Audio-only mode (MP3, M4A, WAV, OPUS).
     * Embedded thumbnails, subtitles (manual or auto-generated), and chapter markers.
     * Browser cookies integration to easily bypass format restrictions or age-gated blocks.
-* **🚀 Built for Modern Web:** Integrated JavaScript Runtime support (`node`) enabled by default to smoothly execute modern extraction scripts.
+* **🚀 Built for Modern Web:** Integrated JavaScript Runtime support (`node`, `deno`, `quickjs`) to smoothly execute modern extraction scripts.
 * **🧾 Real-time Logging Console:** Watch the raw download speed, ETA percentage, and background steps unfold live.
 * **🌃 Dark-Mode :** Ensuring Eye-comfort!
 * **⏯ Resume ability:** For flexible download session.
