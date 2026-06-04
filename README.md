@@ -6,13 +6,10 @@ This tool serves as a powerful graphical interface (GUI) wrapper for **yt-dlp**,
 
 ---
 ## 🖼 Screenshots
-
-<img width="402" height="382" alt="image" src="https://github.com/user-attachments/assets/f6f69d24-7895-49cc-8f04-f671fb17f773" />
-
-<img width="402" height="382" alt="image" src="https://github.com/user-attachments/assets/17ad005b-5ac6-4933-8200-62c9ebaad3c8" />
-<img width="402" height="382" alt="image" src="https://github.com/user-attachments/assets/c92fc7ed-ad47-44f3-82a1-89bc9455949c" />
-<img width="402" height="382" alt="image" src="https://github.com/user-attachments/assets/70ae85d3-b18c-4b93-a92e-2d459e7c4602" />
-
+<img width="702" height="712" alt="image" src="https://github.com/user-attachments/assets/eff0b3a2-5c36-4366-b727-88542c8700f6" />
+<img width="702" height="712" alt="image" src="https://github.com/user-attachments/assets/d10b5bbd-8f32-4d45-85ce-88a25248030a" />
+<img width="702" height="712" alt="image" src="https://github.com/user-attachments/assets/bee63302-38ae-4b87-ba89-c3f8e11c40db" />
+<img width="702" height="712" alt="image" src="https://github.com/user-attachments/assets/e86db291-a8ad-475f-affc-51c5362a8878" />
 ---
 
 ## ✨ Features
@@ -21,13 +18,15 @@ This tool serves as a powerful graphical interface (GUI) wrapper for **yt-dlp**,
 * **🔍 Built-in Search Explorer:** Look up videos directly inside the app using keywords. Scrape titles, channel links, and URLs without opening a web browser.
 * **📦 Advanced Selection Queue:** Send your searched results straight into the main downloader loop.
 * **📋 Intelligent Channel/Playlist Controls:** Found a Channeel/Playlist with 6969 videos? No worries! The app lets you read the list in Notepad and choose exactly which index numbers you want to download or stream.
-* **🛠️ Pro Configurations Made Simple:** * Automatic resolution selection (from 144p baseline up to 8K Ultra-HD).
+* **🛠️ Pro Configurations Made Simple:** Automatic resolution selection (from 144p baseline up to 8K Ultra-HD).
     * Separate Video + Audio extraction or Audio-only mode (MP3, M4A, WAV, OPUS).
     * Embedded thumbnails, subtitles (manual or auto-generated), and chapter markers.
     * Browser cookies integration to easily bypass format restrictions or age-gated blocks.
 * **🚀 Built for Modern Web:** Integrated JavaScript Runtime support (`node`) enabled by default to smoothly execute modern extraction scripts.
 * **🧾 Real-time Logging Console:** Watch the raw download speed, ETA percentage, and background steps unfold live.
-
+* **🌃 Dark-Mode :** Ensuring Eye-comfort!
+* **⏯ Resume ability:** For flexible download session.
+* **🏭 Advanced Download Queue Management:** Downloading Multiple videos/playlists is as easy as being unemployed!
 ---
 
 ## 🛠️ Pre-Requirements (Important)
@@ -35,7 +34,7 @@ This tool serves as a powerful graphical interface (GUI) wrapper for **yt-dlp**,
 To run this tool smoothly on Windows, you need three core helper components installed on your computer. Don't worry—they are simple to set up!
 
 1.  **Python 3.x:** [Download Python](https://www.python.org/downloads/) (Make sure to check the box that says **"Add Python to PATH"** during installation).
-2.  **FFmpeg:** Required for merging high-quality audio and video tracks together. 
+2.  **FFmpeg:** Required for merging high-quality audio and video tracks together. [Download ffmpeg]([https://www.python.org/downloads/](https://ffmpeg.org/)
     * *Tip:* You can place `ffmpeg.exe` and `ffprobe.exe` directly into the script's folder, or add them to your Windows System PATH.
 3.  **Node.js (Recommended):** Used as the JavaScript runtime engine to extract complex video links. [Download Node.js](https://nodejs.org/).
 
