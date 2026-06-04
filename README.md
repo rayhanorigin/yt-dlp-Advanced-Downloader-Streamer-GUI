@@ -34,7 +34,7 @@ This tool serves as a powerful graphical interface (GUI) wrapper for **yt-dlp**,
 To run this tool smoothly on Windows, you need three core helper components installed on your computer. Don't worry—they are simple to set up!
 
 1.  **Python 3.x:** [Download Python](https://www.python.org/downloads/) (Make sure to check the box that says **"Add Python to PATH"** during installation).
-2.  **FFmpeg:** Required for merging high-quality audio and video tracks together. [Download ffmpeg]([https://www.python.org/downloads/](https://ffmpeg.org/)
+2.  **FFmpeg:** Required for merging high-quality audio and video tracks together. [Download ffmpeg](https://ffmpeg.org/download.html).
     * *Tip:* You can place `ffmpeg.exe` and `ffprobe.exe` directly into the script's folder, or add them to your Windows System PATH.
 3.  **Node.js (Recommended):** Used as the JavaScript runtime engine to extract complex video links. [Download Node.js](https://nodejs.org/).
 
