@@ -17,7 +17,7 @@ This tool serves as a powerful graphical interface (GUI) wrapper for **yt-dlp**,
 * **📺 Seamless Live Streaming:** Stream individual videos or playlist items directly into **MPV** or **VLC Media Player** without downloading them first.
 * **🔍 Built-in Search Explorer:** Look up videos directly inside the app using keywords. Scrape titles, channel links, and URLs without opening a web browser.
 * **📦 Advanced Selection Queue:** Send your searched results straight into the main downloader loop.
-* **📋 Intelligent Channel/Playlist Controls:** Found a Channeel/Playlist with 6969 videos? No worries! The app lets you read the list in Notepad and choose exactly which index numbers you want to download or stream.
+* **📋 Intelligent Channel/Playlist Controls:** Found a Channeel/Playlist with 6969 videos? No worries! The app lets you read the list and choose exactly which index numbers you want to download or stream.
 * **🛠️ Pro Configurations Made Simple:** Automatic resolution selection (from 144p baseline up to 8K Ultra-HD).
     * Separate Video + Audio extraction or Audio-only mode (MP3, M4A, WAV, OPUS).
     * Embedded thumbnails, subtitles (manual or auto-generated), and chapter markers.
