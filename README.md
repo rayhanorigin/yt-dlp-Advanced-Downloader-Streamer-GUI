@@ -6,12 +6,16 @@ This tool serves as a powerful graphical interface (GUI) wrapper for **yt-dlp**,
 
 ---
 ## 🖼 Screenshots
-<img width="802" height="728" alt="image" src="https://github.com/user-attachments/assets/bed6d456-0cc0-43f4-ba13-b7d69552ddd0" />
-<img width="802" height="728" alt="image" src="https://github.com/user-attachments/assets/11a79aff-7f2a-4a8d-9c96-1e2f14370616" />
-<img width="802" height="728" alt="image" src="https://github.com/user-attachments/assets/3bebd36c-3027-4ce4-8772-84fdaffa936d" />
-<img width="802" height="728" alt="image" src="https://github.com/user-attachments/assets/59dd03bd-141a-49e2-8419-17315d5daf3d" />
----
 
+---
+<img width="802" height="722" alt="image" src="https://github.com/user-attachments/assets/b25b8bf9-10eb-4704-92b0-a0e886c74e8e" />
+<img width="802" height="722" alt="image" src="https://github.com/user-attachments/assets/33d919dd-858d-4932-a16d-24f75c2c0703" />
+<img width="802" height="722" alt="image" src="https://github.com/user-attachments/assets/98161d86-5fef-4b4e-8f8d-95568b229c59" />
+<img width="802" height="722" alt="image" src="https://github.com/user-attachments/assets/fe148690-23ff-4b8b-80db-7ef89afa6b19" />
+<img width="813" height="728" alt="image" src="https://github.com/user-attachments/assets/fd58a7a4-c4dd-40f2-93e4-eb8e25b322bc" />
+<img width="802" height="722" alt="image" src="https://github.com/user-attachments/assets/26ac3606-f370-44e2-bbd0-1d1418f07d4e" />
+
+---
 ## ✨ Features
 
 * **📺 Seamless Live Streaming:** Stream individual videos or playlist items directly into **MPV** or **VLC Media Player** without downloading them first.
