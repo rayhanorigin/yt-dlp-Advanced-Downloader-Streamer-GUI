@@ -1,79 +1,155 @@
-# 🎬 yt-dlp Advanced Downloader & Streamer
+# yt-dlp Advanced Downloader & Streamer GUI
 
-An advanced, feature-rich, and easy-to-use Windows desktop application built with Python (`tkinter`) to make video downloading and live-streaming effortless. 
+A feature-packed Windows desktop GUI for [yt-dlp](https://github.com/yt-dlp/yt-dlp), built with Python and Tkinter. It wraps the yt-dlp command line into a full application: search, queue, download, live-stream to your media player, schedule recurring jobs, and manage everything through profiles — all without touching a terminal.
 
-This tool serves as a powerful graphical interface (GUI) wrapper for **yt-dlp**, allowing you to bypass complicated command-line setups. Search for videos, watch live streams in your favorite player, configure subtitles, and download content in high quality—all with a few simple clicks!
+![Version](https://img.shields.io/badge/version-2.1-544BD2)
+![Platform](https://img.shields.io/badge/platform-Windows-0078D6)
+![Python](https://img.shields.io/badge/python-3.x-blue)
 
----
-## 🖼 Screenshots
-
----
-<img width="802" height="722" alt="image" src="https://github.com/user-attachments/assets/b25b8bf9-10eb-4704-92b0-a0e886c74e8e" />
-<img width="802" height="722" alt="image" src="https://github.com/user-attachments/assets/33d919dd-858d-4932-a16d-24f75c2c0703" />
-<img width="802" height="722" alt="image" src="https://github.com/user-attachments/assets/98161d86-5fef-4b4e-8f8d-95568b229c59" />
-<img width="802" height="722" alt="image" src="https://github.com/user-attachments/assets/fe148690-23ff-4b8b-80db-7ef89afa6b19" />
-<img width="813" height="728" alt="image" src="https://github.com/user-attachments/assets/fd58a7a4-c4dd-40f2-93e4-eb8e25b322bc" />
-<img width="802" height="722" alt="image" src="https://github.com/user-attachments/assets/26ac3606-f370-44e2-bbd0-1d1418f07d4e" />
+> **Disclaimer:** This open-source tool is built strictly for personal use. The developer is not responsible for any illegal use.
 
 ---
+
 ## ✨ Features
 
-* **📺 Seamless Live Streaming:** Stream individual videos or playlist items directly into **MPV** or **VLC Media Player** without downloading them first.
-* **🔍 Built-in Search Explorer:** Look up videos directly inside the app using keywords. Scrape titles, channel links, and URLs without opening a web browser.
-* **📦 Advanced Selection Queue:** Send your searched results straight into the main downloader loop.
-* **📋 Intelligent Channel/Playlist Controls:** Found a Channeel/Playlist with 6969 videos? No worries! The app lets you read the list and choose exactly which index numbers you want to download or stream.
-* **🛠️ Pro Configurations Made Simple:** Automatic resolution selection (from 144p baseline up to 8K Ultra-HD).
-    * Separate Video + Audio extraction or Audio-only mode (MP3, M4A, WAV, OPUS).
-    * Embedded thumbnails, subtitles (manual or auto-generated), and chapter markers.
-    * Browser cookies integration to easily bypass format restrictions or age-gated blocks.
-* **🚀 Built for Modern Web:** Integrated JavaScript Runtime support (`node`, `deno`, `quickjs`) to smoothly execute modern extraction scripts.
-* **🧾 Real-time Logging Console:** Watch the raw download speed, ETA percentage, and background steps unfold live.
-* **🌃 Dark-Mode :** Ensuring Eye-comfort!
-* **⏯ Resume ability:** For flexible download session.
-* **🏭 Advanced Download Queue Management:** Downloading Multiple videos/playlists is as easy as being unemployed!
----
+### 🎯 Download & Streaming
+- **Three input modes:** single URL/playlist, a batch `.txt` file of links, or a queue built from search results
+- **Drag & drop** support for URLs and batch files directly onto the input field (via `tkinterdnd2`, optional)
+- **Live streaming** straight into **MPV** or **VLC** — auto-detects installed players and lets you choose when both are present, no download required
+- **Pause / Resume / Cancel** controls for active jobs
+- **"Copy as yt-dlp Command"** — generates and copies the exact equivalent command-line invocation for any configuration
+- Resume interrupted downloads (`--continue`), configurable retries, and delay-between-downloads (including random ranges like `2-5`)
+- Speed limiting and full proxy support
+- Auto-open the destination folder when a job finishes
+- Smart completion detection that distinguishes real errors from "already downloaded" / warning-only exits
 
-## 🛠️ Pre-Requirements (Important)
+### 🔍 Search Explorer
+- Built-in YouTube search (`ytsearch`) with a configurable result limit
+- Sortable, resizable results table with persistent column widths
+- Fetch metadata/contents directly from a pasted link (no search needed)
+- Add selected or all results to a manageable **download queue** (reorder, remove, clear)
+- Search and URL history with quick recall, and one-click history clearing
 
-To run this tool smoothly on Windows, you need three core helper components installed on your computer. Don't worry—they are simple to set up!
+### 🎛️ Format & Quality Control
+- Media type selector: **video**, **audio**, **thumbnail only**, or **subtitles only**
+- Quality target and container/extension pickers tailored to the selected media type
+- Independent **video codec** (H.264, H.265/HEVC, AV1, VP9, VP8) and **audio codec** (AAC, MP3, Opus, Vorbis, FLAC, AC3, EAC3) re-encode selection
+- Fine-grained audio track quality control (up to "None" for video-only output)
+- Automatic `--format-sort` construction based on your selections
+- Conflict detection that warns you before running a job with contradictory settings
 
-1.  **Python 3.x:** [Download Python](https://www.python.org/downloads/) (Make sure to check the box that says **"Add Python to PATH"** during installation).
-2.  **FFmpeg:** Required for merging high-quality audio and video tracks together. [Download ffmpeg](https://ffmpeg.org/download.html).
-    * *Tip:* You can place `ffmpeg.exe` and `ffprobe.exe` directly into the script's folder, or add them to your Windows System PATH.
-3.  **Node.js (Recommended):** Used as the JavaScript runtime engine to extract complex video links. [Download Node.js](https://nodejs.org/).
+### 📝 Subtitles, Metadata & Extras
+- Subtitle modes: none, or "smart" (prefers manual subs, falls back to auto-generated), with multi-language codes (`en,es,fr`)
+- Embed thumbnails into the output file
+- Save raw description metadata, write `info.json`/NFO sidecar files
+- Chapter splitting, comment downloading, and live chat download (YouTube)
+- **SponsorBlock** integration — remove or mark sponsor/self-promo/intro/outro/filler segments by category, or use `all`
+- Cookie support: load a `cookies.txt` profile or pull cookies directly from your browser (Chrome, Firefox, Edge, Brave, Opera, etc.)
+- Configurable JS runtime (node / quickjs / deno) for sites requiring JS challenge solving
+- Free-text field to append any extra raw yt-dlp arguments to the final command
 
-### Media Players (Optional for Streaming)
-* **MPV Player:** Place `mpv.exe` in the script's folder or add it to your PATH.
-* **VLC Media Player:** Ensure VLC is installed in its default location (`C:\Program Files\VideoLAN\VLC`).
+### 🗂️ Profiles & Scheduler
+- Save your entire configuration as a named **profile** and reload it instantly; mark one as default
+- **Scheduled jobs** tab: create recurring or one-off download jobs with their own target, output folder, and playlist options
+- Batch execution: multiple due jobs run back-to-back with a single combined summary popup instead of spamming notifications
+- **Run at Windows startup** support, plus an option to run pending jobs immediately when the app launches
+- Manually trigger, edit, enable/disable, or delete any scheduled job
 
----
-
-## 🚀 How to Run the App
-
-1.  **Download the release script:** Download the script file from releases and put it into the same folder where yt-dlp is.
-2.  **Get yt-dlp:** * The script will automatically check if `yt-dlp` is installed globally on your PC. 
-    * *Easiest Method:* Download the Windows executable file (`yt-dlp.exe`) from the [Official yt-dlp Releases](https://github.com/yt-dlp/yt-dlp/releases) and drop it right into the same folder as this script.
-3.  **Launch the tool:** Double-click the script file or run this command in your terminal/command prompt inside the folder:
-    ```bash
-    python "Drag n Drop the script file"
-    ```
-
----
-
-## 💡 Quick Tips for Your Ease
-
-> 🥷 **Bypassing Access/Sign-in Blocks:**
-> If you encounter download blocks or errors on certain websites, place your exported `cookies.txt` file directly into the script's folder. The app will automatically detect it and instantly activate the **"Inject cookies.txt parameter profile"** option to bypass restrictions securely! Alternatively, use the **"Cookies from browser"** option from Advanced section.
-
----
-## 😴 For Lazy People
-
-If you don't want to go through Python stuff, you can still try my Same script but based on Windows VBS [HERE](https://github.com/rayhanorigin/ytdlp-gui-windows)
-
----
-## ⚖️ Disclaimer & License
-### 📌 I vibe coded the project but I'm pretty confident with this tool. ###
-This open-source tool is engineered strictly for personal educational and archival use. Please respect the copyright terms of the respective platforms you interact with. The author holds no responsibility for any misuse or policy violations.
+### 🖥️ Interface & Quality of Life
+- **Dark mode** toggle applied across the entire interface
+- Full keyboard shortcut set (start job, stream, pause/resume, search focus, URL focus, select all, copy, clear queue, reorder queue, and more — see in-app **F1** help)
+- Scrollable, resizable tabs that stay usable at any window size
+- Right-click context menu, live execution log console (with in-place progress line updates), and a persistent status bar
+- Built-in **Requirements Checker** that verifies yt-dlp, ffmpeg, Python, and JS runtime availability across PATH, the app folder, and the Windows registry
+- **Self-update checker** — checks GitHub Releases for newer app versions (separate from yt-dlp's own `-U` updater) with optional automatic check on startup
+- Config, profiles, history, and column layout all persist between sessions, with automatic migration from legacy config file locations
+- The console window is automatically hidden on launch for a clean, GUI-only experience
 
 ---
-Created with ❤️ by **rayhanorigin**
+
+## 📋 Requirements
+
+- **Windows 10 or later** (this app is Windows-only)
+- [Python 3](https://www.python.org/) — to run from source
+- [yt-dlp](https://github.com/yt-dlp/yt-dlp) — the core download engine
+- [ffmpeg](https://ffmpeg.org/) — required for merging, re-encoding, thumbnail embedding, chapter splitting
+- A JavaScript runtime such as [Node.js](https://nodejs.org/) — recommended, used by yt-dlp for some sites' JS challenges
+- [mpv](https://mpv.io/) or [VLC](https://www.videolan.org/vlc/) — optional, only needed for the live-streaming feature
+- [tkinterdnd2](https://pypi.org/project/tkinterdnd2/) — optional, enables drag & drop; the app runs fine without it
+
+Use the in-app **🔍 Check Requirements** button (Advanced Settings tab) at any time to verify what's detected on your system.
+
+---
+
+## 🚀 Installation
+
+1. **Clone the repository**
+```bash
+   git clone https://github.com/rayhanorigin/yt-dlp-Advanced-Downloader-Streamer-GUI.git
+   cd yt-dlp-Advanced-Downloader-Streamer-GUI
+```
+
+2. **Install Python dependencies**
+```bash
+   pip install tkinterdnd2
+```
+
+3. **Install the required tools**
+   - [Download yt-dlp.exe](https://github.com/yt-dlp/yt-dlp/releases) and make sure it's on your PATH, or placed next to the script
+   - [Download ffmpeg](https://ffmpeg.org/download.html) (Windows builds) and add it to your PATH
+   - (Optional) Install [Node.js](https://nodejs.org/) for the JS runtime
+   - (Optional) Install [mpv](https://mpv.io/) and/or [VLC](https://www.videolan.org/vlc/) for streaming
+
+4. **Run the app**
+```bash
+   python yt-dlp.Advanced.Downloader.py
+```
+
+   Or grab a pre-built `.exe` from the [Releases page](https://github.com/rayhanorigin/yt-dlp-Advanced-Downloader-Streamer-GUI/releases), if available, to run it without installing Python.
+
+---
+
+## 🕹️ Usage
+
+1. Paste a URL, load a batch `.txt` file, or search and queue videos from the **Search Explorer** tab.
+2. Configure your desired media type, quality, codecs, and container in **Download & Stream**.
+3. Fine-tune subtitles, SponsorBlock, cookies, retries, and other behavior in **Advanced Settings**.
+4. Hit **START DOWNLOAD JOB** to download, or **STREAM LIVE IN PLAYER** to watch instantly without saving.
+5. Save your setup as a **Profile**, or schedule it to run automatically from the **Profiles & Scheduler** tab.
+6. Watch progress and full command output live in the **Full Execution Logs** tab.
+
+Press **F1** inside the app at any time for the full keyboard shortcut reference.
+
+---
+
+## ⚙️ Configuration & Data
+
+The app stores its configuration, profiles, scheduled jobs, search/URL history, and column layout in a config folder next to the executable/script, and migrates automatically from older legacy file locations when detected. Use the **History & Saved Logs Persistence Controls** section in Advanced Settings to clear search or URL history at any time.
+
+---
+## 🪡 Build Executable
+### 1. Open CMD ###
+### 2. Install Pyinstaller ###
+```bash
+pip install pyinstaller
+```
+### 3. Build EXE ###
+```bash
+pyinstaller --onefile --windowed --name "yt-dlp Advanced Downloader" --icon=icon.ico yt-dlp.Advanced.Downloader.py --onefile
+```
+---
+
+## 🙏 Credits
+
+- [yt-dlp](https://github.com/yt-dlp/yt-dlp) — the download engine this GUI wraps
+- [ffmpeg](https://ffmpeg.org/) — media processing and remuxing
+- [Python](https://www.python.org/) & Tkinter — application framework
+- [Node.js](https://nodejs.org/) (or other JS runtimes) — JS challenge solving support
+
+---
+
+## 👤 Author
+
+**Rayhan Azad**
+📧 knifeswifter57@gmail.com
+🔗 [GitHub Repository](https://github.com/rayhanorigin/yt-dlp-Advanced-Downloader-Streamer-GUI)
