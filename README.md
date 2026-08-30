@@ -25,6 +25,7 @@ A feature-packed Windows desktop GUI for [yt-dlp](https://github.com/yt-dlp/yt-d
 
 ### 🔍 Search Explorer
 - Built-in YouTube search (`ytsearch`) with a configurable result limit
+- Thumbnail Support
 - Sortable, resizable results table with persistent column widths
 - Fetch metadata/contents directly from a pasted link (no search needed)
 - Add selected or all results to a manageable **download queue** (reorder, remove, clear)
