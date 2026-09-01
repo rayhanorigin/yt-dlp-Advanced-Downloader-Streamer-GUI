@@ -2,7 +2,7 @@
 
 A feature-packed Windows desktop GUI for [yt-dlp](https://github.com/yt-dlp/yt-dlp), built with Python and Tkinter. It wraps the yt-dlp command line into a full application: search, queue, download, live-stream to your media player, schedule recurring jobs, and manage everything through profiles — all without touching a terminal.
 
-![Version](https://img.shields.io/badge/version-2.3-544BD2)
+![Version](https://img.shields.io/badge/version-2.4-544BD2)
 ![Platform](https://img.shields.io/badge/platform-Windows-0078D6)
 ![Python](https://img.shields.io/badge/python-3.x-blue)
 
