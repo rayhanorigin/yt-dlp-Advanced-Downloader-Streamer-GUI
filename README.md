@@ -72,12 +72,11 @@ A feature-packed Windows desktop GUI for [yt-dlp](https://github.com/yt-dlp/yt-d
 ## 📋 Requirements
 
 - **Windows 10 or later** (this app is Windows-only)
-- [Python 3](https://www.python.org/) — to run from source
+- [Python 3](https://www.python.org/) — to run from source (EXE version doesn't need python to be installed)
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp) — the core download engine
 - [ffmpeg](https://ffmpeg.org/) — required for merging, re-encoding, thumbnail embedding, chapter splitting
 - A JavaScript runtime such as [Node.js](https://nodejs.org/) — recommended, used by yt-dlp for some sites' JS challenges
 - [mpv](https://mpv.io/) or [VLC](https://www.videolan.org/vlc/) — optional, only needed for the live-streaming feature
-- [tkinterdnd2](https://pypi.org/project/tkinterdnd2/) — optional, enables drag & drop; the app runs fine without it
 
 Use the in-app **🔍 Check Requirements** button (Advanced Settings tab) at any time to verify what's detected on your system.
 
