@@ -9,6 +9,14 @@ A feature-packed Windows desktop GUI for [yt-dlp](https://github.com/yt-dlp/yt-d
 > **Disclaimer:** This open-source tool is built strictly for personal use. The developer is not responsible for any illegal use.
 
 ---
+## Screenshots
+
+<img width="302" height="322" alt="image" src="https://github.com/user-attachments/assets/4b2537f1-5f61-496f-8e2a-7423422189fe" />
+<img width="302" height="322" alt="image" src="https://github.com/user-attachments/assets/e34131ce-8881-4c5b-88ab-22bdade6c9c0" />
+<img width="302" height="322" alt="image" src="https://github.com/user-attachments/assets/0f4a210c-7aaa-4090-bcf0-9f26bdd8df18" />
+<img width="302" height="322" alt="image" src="https://github.com/user-attachments/assets/a9352b63-4851-46fb-96b2-de519962780c" />
+<img width="302" height="322" alt="image" src="https://github.com/user-attachments/assets/d3978911-eb63-4f33-b436-286cf1abd4f9" />
+
 
 ## ✨ Features
 
