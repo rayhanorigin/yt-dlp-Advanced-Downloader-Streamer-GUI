@@ -2,7 +2,7 @@
 
 A feature-packed Windows desktop GUI for [yt-dlp](https://github.com/yt-dlp/yt-dlp), built with Python and Tkinter. It wraps the yt-dlp command line into a full application: search, queue, download, live-stream to your media player, schedule recurring jobs, and manage everything through profiles — all without touching a terminal.
 
-![Version](https://img.shields.io/badge/version-2.9-544BD2)
+![Version](https://img.shields.io/badge/version-3.0-544BD2)
 ![Platform](https://img.shields.io/badge/platform-Windows-0078D6)
 ![Python](https://img.shields.io/badge/python-3.x-blue)
 
@@ -11,69 +11,69 @@ A feature-packed Windows desktop GUI for [yt-dlp](https://github.com/yt-dlp/yt-d
 ---
 ## Screenshots
 
-<img width="302" height="322" alt="image" src="https://github.com/user-attachments/assets/4b2537f1-5f61-496f-8e2a-7423422189fe" />
-<img width="302" height="322" alt="image" src="https://github.com/user-attachments/assets/e34131ce-8881-4c5b-88ab-22bdade6c9c0" />
-<img width="302" height="322" alt="image" src="https://github.com/user-attachments/assets/0f4a210c-7aaa-4090-bcf0-9f26bdd8df18" />
-<img width="302" height="322" alt="image" src="https://github.com/user-attachments/assets/a9352b63-4851-46fb-96b2-de519962780c" />
-<img width="302" height="322" alt="image" src="https://github.com/user-attachments/assets/d3978911-eb63-4f33-b436-286cf1abd4f9" />
-
 
 ## ✨ Features
 
-### 🎯 Download & Streaming
-- **Three input modes:** single URL/playlist, a batch `.txt` file of links, or a queue built from search results
-- **Drag & drop** support for URLs and batch files directly onto the input field (via `tkinterdnd2`, optional)
-- **Live streaming** straight into **MPV** or **VLC** — auto-detects installed players and lets you choose when both are present, no download required
-- **Pause / Resume / Cancel** controls for active jobs
-- **"Copy as yt-dlp Command"** — generates and copies the exact equivalent command-line invocation for any configuration
-- Resume interrupted downloads (`--continue`), configurable retries, and delay-between-downloads (including random ranges like `2-5`)
-- Speed limiting and full proxy support
-- Auto-open the destination folder when a job finishes
-- Smart completion detection that distinguishes real errors from "already downloaded" / warning-only exits
+### 🎬 Advanced Downloads
+- Download videos, audio, thumbnails, or subtitles.
+- Select video and audio quality, codecs, and containers.
+- Support for custom yt-dlp arguments.
+- Browser cookies and cookies-file support.
+- Subtitle and thumbnail configuration.
+- SponsorBlock and other advanced yt-dlp options.
+- Retry, delay, speed-limit, and concurrent-fragment controls.
+- Pause and resume downloads.
 
-### 🔍 Search Explorer
-- Built-in YouTube search (`ytsearch`) with a configurable result limit
-- Thumbnail Support
-- Suggestions Support
-- Sortable, resizable results table with persistent column widths
-- Fetch metadata/contents directly from a pasted link (no search needed)
-- Add selected or all results to a manageable **download queue** (reorder, remove, clear)
-- Search and URL history with quick recall, and one-click history clearing
+### 🔎 Search Explorer
+- Search supported websites directly through yt-dlp.
+- Browse search results inside the application.
+- View available thumbnails when supported.
+- Queue selected search results for downloading.
+- Stream selected results directly through a supported media player.
 
-### 🎛️ Format & Quality Control
-- Media type selector: **video**, **audio**, **thumbnail only**, or **subtitles only**
-- Quality target and container/extension pickers tailored to the selected media type
-- Independent **video codec** (H.264, H.265/HEVC, AV1, VP9, VP8) and **audio codec** (AAC, MP3, Opus, Vorbis, FLAC, AC3, EAC3) re-encode selection
-- Fine-grained audio track quality control (up to "None" for video-only output)
-- Automatic `--format-sort` construction based on your selections
-- Conflict detection that warns you before running a job with contradictory settings
+### 📥 Download Queue
+- Add multiple URLs or media items to a queue.
+- Process batch downloads in the background.
+- Remove, reorder, or clear queued items.
+- Handle download results and errors without blocking the interface.
 
-### 📝 Subtitles, Metadata & Extras
-- Subtitle modes: none, or "smart" (prefers manual subs, falls back to auto-generated), with multi-language codes (`en,es,fr`)
-- Embed thumbnails into the output file
-- Save raw description metadata, write `info.json`/NFO sidecar files
-- Chapter splitting, comment downloading, and live chat download (YouTube)
-- **SponsorBlock** integration — remove or mark sponsor/self-promo/intro/outro/filler segments by category, or use `all`
-- Cookie support: load a `cookies.txt` profile or pull cookies directly from your browser (Chrome, Firefox, Edge, Brave, Opera, etc.)
-- Configurable JS runtime (node / quickjs / deno) for sites requiring JS challenge solving
-- Free-text field to append any extra raw yt-dlp arguments to the final command
+### ▶️ Media Streaming
+- Stream supported media directly through **MPV** or **VLC**.
+- Automatically detect available players.
+- Stream individual URLs or selected search results.
+- Supports the same cookie options used for downloading.
 
-### 🗂️ Profiles & Scheduler
-- Save your entire configuration as a named **profile** and reload it instantly; mark one as default
-- **Scheduled jobs** tab: create recurring or one-off download jobs with their own target, output folder, and playlist options
-- Batch execution: multiple due jobs run back-to-back with a single combined summary popup instead of spamming notifications
-- **Run at Windows startup** support, plus an option to run pending jobs immediately when the app launches
-- Manually trigger, edit, enable/disable, or delete any scheduled job
+### 👤 Profiles & Scheduler
+- Save frequently used download configurations as profiles.
+- Set a default profile that loads automatically.
+- Duplicate, update, import, and export profiles.
+- Schedule downloads to run once, daily, weekly, or at application startup.
+- Run, duplicate, enable, disable, or delete scheduled jobs.
 
-### 🖥️ Interface & Quality of Life
-- **Dark mode** toggle applied across the entire interface
-- Full keyboard shortcut set (start job, stream, pause/resume, search focus, URL focus, select all, copy, clear queue, reorder queue, and more — see in-app **F1** help)
-- Scrollable, resizable tabs that stay usable at any window size
-- Right-click context menu, live execution log console (with in-place progress line updates), and a persistent status bar
-- Built-in **Requirements Checker** that verifies yt-dlp, ffmpeg, Python, and JS runtime availability across PATH, the app folder, and the Windows registry
-- **Self-update checker** — checks GitHub Releases for newer app versions (separate from yt-dlp's own `-U` updater) with optional automatic check on startup
-- Config, profiles, history, and column layout all persist between sessions, with automatic migration from legacy config file locations
-- The console window is automatically hidden on launch for a clean, GUI-only experience
+### 🎨 Themes
+- Customize the application's appearance.
+- Built-in theme presets.
+- Create and save custom themes.
+- Import, export, duplicate, and delete themes.
+- Theme configurations are stored separately for easy management.
+
+### ⚙️ Advanced Settings
+Provides detailed control over yt-dlp and application behavior, including:
+- Video and audio formats
+- Codecs and containers
+- Subtitles
+- Cookies
+- SponsorBlock
+- JavaScript runtime
+- Comments and live chat
+- Chapters and metadata
+- Thumbnail embedding
+- Retries and delays
+- Concurrent fragments
+- Custom yt-dlp arguments
+
+### 📋 Execution Logs
+A dedicated execution log tab with Custom command box provides access and visibility into application and yt-dlp activity.
 
 ---
 
@@ -92,24 +92,14 @@ Use the in-app **🔍 Check Requirements** button (Advanced Settings tab) at any
 
 ## 🚀 Installation
 
-1. **Clone the repository**
-```bash
-   git clone https://github.com/rayhanorigin/yt-dlp-Advanced-Downloader-Streamer-GUI.git
-   cd yt-dlp-Advanced-Downloader-Streamer-GUI
-```
-
-2. **Install Python dependencies**
-```bash
-   pip install tkinterdnd2
-```
-
-3. **Install the required tools**
+1. **Download the tool**
+2. **Install the required tools**
    - [Download yt-dlp.exe](https://github.com/yt-dlp/yt-dlp/releases) and make sure it's on your PATH, or placed next to the script
    - [Download ffmpeg](https://ffmpeg.org/download.html) (Windows builds) and add it to your PATH
    - (Optional) Install [Node.js](https://nodejs.org/) for the JS runtime
    - (Optional) Install [mpv](https://mpv.io/) and/or [VLC](https://www.videolan.org/vlc/) for streaming
 
-4. **Run the app**
+2. **Run the app**
 ```bash
    python yt-dlp.Advanced.Downloader.py
 ```
@@ -144,7 +134,7 @@ pip install pyinstaller
 ```
 ### 3. Build EXE ###
 ```bash
-pyinstaller --onefile --windowed --name "yt-dlp Advanced Downloader" --icon=icon.ico yt-dlp.Advanced.Downloader.py --onefile
+pyinstaller --onefile --windowed --name "yt-dlp Advanced Downloader" --icon=icon.ico --add-data "icon.ico;." Downloader_Script.py
 ```
 ---
 
