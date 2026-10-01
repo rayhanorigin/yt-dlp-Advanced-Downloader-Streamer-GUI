@@ -85,7 +85,7 @@ A dedicated execution log tab with Custom command box provides access and visibi
 
 ## 📋 Requirements
 
-- **Windows 10 or later** (this app is Windows-only)
+- **Any Windows that Supports Python3** (this app is Windows-only)
 - [Python 3](https://www.python.org/) — to run from source (EXE version doesn't need python to be installed)
 - [yt-dlp](https://github.com/yt-dlp/yt-dlp) — the core download engine
 - [ffmpeg](https://ffmpeg.org/) — required for merging, re-encoding, thumbnail embedding, chapter splitting
