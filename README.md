@@ -10,6 +10,12 @@ A feature-packed Windows desktop GUI for [yt-dlp](https://github.com/yt-dlp/yt-d
 
 ---
 ## Screenshots
+<img width="522" height="422" alt="image" src="https://github.com/user-attachments/assets/e65e3323-e796-431f-a60f-9191d712b380" />
+<img width="522" height="422" alt="image" src="https://github.com/user-attachments/assets/84d711d9-908b-438a-86c1-4e987edf77fc" />
+<img width="522" height="422" alt="image" src="https://github.com/user-attachments/assets/0df96253-c21a-4a66-beb7-094ddfc6358c" />
+<img width="522" height="422" alt="image" src="https://github.com/user-attachments/assets/75a0fbc2-2c40-49d7-95bc-19e01d42345b" />
+<img width="522" height="422" alt="image" src="https://github.com/user-attachments/assets/8c65b160-c82e-47b2-a99a-321b9b928b82" />
+<img width="522" height="422" alt="image" src="https://github.com/user-attachments/assets/91cfd148-8116-4e81-b7ad-499da439472b" />
 
 
 ## ✨ Features
