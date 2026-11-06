@@ -2,20 +2,23 @@
 
 A feature-packed Windows desktop GUI for [yt-dlp](https://github.com/yt-dlp/yt-dlp), built with Python and Tkinter. It wraps the yt-dlp command line into a full application: search, queue, download, live-stream to your media player, schedule recurring jobs, and manage everything through profiles — all without touching a terminal.
 
-![Version](https://img.shields.io/badge/version-3.4-544BD2)
+![Version](https://img.shields.io/badge/version-3.5-544BD2)
 ![Platform](https://img.shields.io/badge/platform-Windows-0078D6)
 ![Python](https://img.shields.io/badge/python-3.x-blue)
 
 > **Disclaimer:** This open-source tool is built strictly for personal use. The developer is not responsible for any illegal use.
 
 ---
-## Screenshots
-<img width="522" height="422" alt="image" src="https://github.com/user-attachments/assets/e65e3323-e796-431f-a60f-9191d712b380" />
-<img width="522" height="422" alt="image" src="https://github.com/user-attachments/assets/84d711d9-908b-438a-86c1-4e987edf77fc" />
-<img width="522" height="422" alt="image" src="https://github.com/user-attachments/assets/0df96253-c21a-4a66-beb7-094ddfc6358c" />
-<img width="522" height="422" alt="image" src="https://github.com/user-attachments/assets/75a0fbc2-2c40-49d7-95bc-19e01d42345b" />
-<img width="522" height="422" alt="image" src="https://github.com/user-attachments/assets/8c65b160-c82e-47b2-a99a-321b9b928b82" />
-<img width="522" height="422" alt="image" src="https://github.com/user-attachments/assets/91cfd148-8116-4e81-b7ad-499da439472b" />
+## 🤳🏻 Screenshots
+<img width="427" height="422" alt="image" src="https://github.com/user-attachments/assets/03c92117-e7c5-44d9-a77b-05b3c61a2fa7" />
+<img width="427" height="422" alt="image" src="https://github.com/user-attachments/assets/ec7812f6-2791-490e-a881-386d21cb4821" />
+<img width="427" height="422" alt="image" src="https://github.com/user-attachments/assets/5c3d24a5-6662-4be7-a53f-d502a8f41174" />
+<img width="427" height="422" alt="image" src="https://github.com/user-attachments/assets/8b340772-040a-4d75-9195-5c1b05b1538a" />
+<img width="427" height="422" alt="image" src="https://github.com/user-attachments/assets/138e9912-a560-43fa-b0b6-e2191839f482" />
+<img width="427" height="422" alt="image" src="https://github.com/user-attachments/assets/f5643d90-04b6-4d2d-85e3-d8231986a03a" />
+
+<img width="427" height="422" alt="image" src="https://github.com/user-attachments/assets/1988a5be-9d54-4d5e-8307-97c46fe58724" />
+<img width="427" height="422" alt="image" src="https://github.com/user-attachments/assets/fca8fd3f-e32c-4d59-a070-8a5eb095fd4b" />
 
 
 ## ✨ Features
