@@ -10,15 +10,15 @@ A feature-packed Windows desktop GUI for [yt-dlp](https://github.com/yt-dlp/yt-d
 
 ---
 ## 🤳🏻 Screenshots
-<img width="427" height="422" alt="image" src="https://github.com/user-attachments/assets/03c92117-e7c5-44d9-a77b-05b3c61a2fa7" />
-<img width="427" height="422" alt="image" src="https://github.com/user-attachments/assets/ec7812f6-2791-490e-a881-386d21cb4821" />
-<img width="427" height="422" alt="image" src="https://github.com/user-attachments/assets/5c3d24a5-6662-4be7-a53f-d502a8f41174" />
-<img width="427" height="422" alt="image" src="https://github.com/user-attachments/assets/8b340772-040a-4d75-9195-5c1b05b1538a" />
-<img width="427" height="422" alt="image" src="https://github.com/user-attachments/assets/138e9912-a560-43fa-b0b6-e2191839f482" />
-<img width="427" height="422" alt="image" src="https://github.com/user-attachments/assets/f5643d90-04b6-4d2d-85e3-d8231986a03a" />
+<img width="327" height="322" alt="image" src="https://github.com/user-attachments/assets/03c92117-e7c5-44d9-a77b-05b3c61a2fa7" />
+<img width="327" height="322" alt="image" src="https://github.com/user-attachments/assets/ec7812f6-2791-490e-a881-386d21cb4821" />
+<img width="327" height="322" alt="image" src="https://github.com/user-attachments/assets/5c3d24a5-6662-4be7-a53f-d502a8f41174" />
+<img width="327" height="322" alt="image" src="https://github.com/user-attachments/assets/8b340772-040a-4d75-9195-5c1b05b1538a" />
+<img width="327" height="322" alt="image" src="https://github.com/user-attachments/assets/138e9912-a560-43fa-b0b6-e2191839f482" />
+<img width="327" height="322" alt="image" src="https://github.com/user-attachments/assets/f5643d90-04b6-4d2d-85e3-d8231986a03a" />
 
-<img width="427" height="422" alt="image" src="https://github.com/user-attachments/assets/1988a5be-9d54-4d5e-8307-97c46fe58724" />
-<img width="427" height="422" alt="image" src="https://github.com/user-attachments/assets/fca8fd3f-e32c-4d59-a070-8a5eb095fd4b" />
+<img width="327" height="322" alt="image" src="https://github.com/user-attachments/assets/1988a5be-9d54-4d5e-8307-97c46fe58724" />
+<img width="327" height="322" alt="image" src="https://github.com/user-attachments/assets/fca8fd3f-e32c-4d59-a070-8a5eb095fd4b" />
 
 
 ## ✨ Features
