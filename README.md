@@ -1,102 +1,140 @@
 # yt-dlp Advanced Downloader & Streamer GUI
 
-A feature-packed Windows desktop GUI for [yt-dlp](https://github.com/yt-dlp/yt-dlp), built with Python and Tkinter. It wraps the yt-dlp command line into a full application: search, queue, download, live-stream to your media player, schedule recurring jobs, and manage everything through profiles — all without touching a terminal.
+A feature-rich Windows desktop application built with Python and Tkinter that provides a graphical interface for [yt-dlp](https://github.com/yt-dlp/yt-dlp). Designed to make downloading, searching, streaming, and managing media easier without having to manually work with command-line arguments.
 
-![Version](https://img.shields.io/badge/version-3.5-544BD2)
-![Platform](https://img.shields.io/badge/platform-Windows-0078D6)
-![Python](https://img.shields.io/badge/python-3.x-blue)
-
-> **Disclaimer:** This open-source tool is built strictly for personal use. The developer is not responsible for any illegal use.
-
----
-## 🤳🏻 Screenshots
-<img width="327" height="322" alt="image" src="https://github.com/user-attachments/assets/03c92117-e7c5-44d9-a77b-05b3c61a2fa7" />
-<img width="327" height="322" alt="image" src="https://github.com/user-attachments/assets/ec7812f6-2791-490e-a881-386d21cb4821" />
-<img width="327" height="322" alt="image" src="https://github.com/user-attachments/assets/5c3d24a5-6662-4be7-a53f-d502a8f41174" />
-<img width="327" height="322" alt="image" src="https://github.com/user-attachments/assets/8b340772-040a-4d75-9195-5c1b05b1538a" />
-<img width="327" height="322" alt="image" src="https://github.com/user-attachments/assets/138e9912-a560-43fa-b0b6-e2191839f482" />
-<img width="327" height="322" alt="image" src="https://github.com/user-attachments/assets/f5643d90-04b6-4d2d-85e3-d8231986a03a" />
-
-<img width="327" height="322" alt="image" src="https://github.com/user-attachments/assets/1988a5be-9d54-4d5e-8307-97c46fe58724" />
-<img width="327" height="322" alt="image" src="https://github.com/user-attachments/assets/fca8fd3f-e32c-4d59-a070-8a5eb095fd4b" />
-
-
-## ✨ Features
-
-### 🎬 Advanced Downloads
-- Download videos, audio, thumbnails, or subtitles.
-- Select video and audio quality, codecs, and containers.
-- Support for custom yt-dlp arguments.
-- Browser cookies and cookies-file support.
-- Subtitle and thumbnail configuration.
-- SponsorBlock and other advanced yt-dlp options.
-- Retry, delay, speed-limit, and concurrent-fragment controls.
-- Pause and resume downloads.
-
-### 🔎 Search Explorer
-- Search supported websites directly through yt-dlp.
-- Browse search results inside the application.
-- View available thumbnails when supported.
-- Queue selected search results for downloading.
-- Stream selected results directly through a supported media player.
-
-### 📥 Download Queue
-- Add multiple URLs or media items to a queue.
-- Process batch downloads in the background.
-- Remove, reorder, or clear queued items.
-- Handle download results and errors without blocking the interface.
-
-### ▶️ Media Streaming
-- Stream supported media directly through **MPV** or **VLC**.
-- Automatically detect available players.
-- Stream individual URLs or selected search results.
-- Supports the same cookie options used for downloading.
-
-### 👤 Profiles & Scheduler
-- Save frequently used download configurations as profiles.
-- Set a default profile that loads automatically.
-- Duplicate, update, import, and export profiles.
-- Schedule downloads to run once, daily, weekly, or at application startup.
-- Run, duplicate, enable, disable, or delete scheduled jobs.
-
-### 🎨 Themes
-- Customize the application's appearance.
-- Built-in theme presets.
-- Create and save custom themes.
-- Import, export, duplicate, and delete themes.
-- Theme configurations are stored separately for easy management.
-
-### ⚙️ Advanced Settings
-Provides detailed control over yt-dlp and application behavior, including:
-- Video and audio formats
-- Codecs and containers
-- Subtitles
-- Cookies
-- SponsorBlock
-- JavaScript runtime
-- Comments and live chat
-- Chapters and metadata
-- Thumbnail embedding
-- Retries and delays
-- Concurrent fragments
-- Custom yt-dlp arguments
-- Download Logger
-
-### 📋 Execution Logs
-A dedicated execution log tab with Custom command box provides access and visibility into application and yt-dlp activity.
+<p align="center">
+  <img src="https://img.shields.io/badge/Version-3.6-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Platform-Windows-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Python-3.x-yellow?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Powered%20By-yt--dlp-red?style=for-the-badge">
+</p>
 
 ---
 
-## 📋 Requirements
+## Overview
 
-- **Any Windows that Supports Python3** (this app is Windows-only)
-- [Python 3](https://www.python.org/) — to run from source (EXE version doesn't need python to be installed)
-- [yt-dlp](https://github.com/yt-dlp/yt-dlp) — the core download engine
-- [ffmpeg](https://ffmpeg.org/) — required for merging, re-encoding, thumbnail embedding, chapter splitting
-- A JavaScript runtime such as [Node.js](https://nodejs.org/) — recommended, used by yt-dlp for some sites' JS challenges
-- [mpv](https://mpv.io/) or [VLC](https://www.videolan.org/vlc/) — optional, only needed for the live-streaming feature
+**yt-dlp Advanced Downloader & Streamer GUI** is a Windows application designed to simplify media downloading and streaming through a customizable graphical interface.
 
-Use the in-app **🔍 Check Requirements** button (Advanced Settings tab) at any time to verify what's detected on your system.
+It provides advanced download controls, video search, queue management, batch processing, streaming playback, profiles, scheduling, filtering, and a wide range of yt-dlp configuration options — all accessible from a single application.
+
+Whether you're downloading a single video, managing multiple downloads, searching for content, processing playlists, or streaming directly to a media player, the application provides a flexible workflow without requiring you to manually construct yt-dlp commands.
+
+## Features
+
+### 📥 Download Manager
+- Download videos, audio, and other supported media.
+- Batch download using multiple URLs.
+- Download queue with add, remove, reorder, and undo operations.
+- Queue persistence across application restarts.
+- Pause, resume, and cancel active download jobs.
+- Download progress and queue-level progress tracking.
+- Custom output directory.
+- Custom filename templates.
+- Concurrent fragment downloading.
+- Copy generated yt-dlp commands to the clipboard.
+- Optional post-download actions.
+
+### 🔍 Search Explorer
+- Search for videos directly within the application.
+- Browse search results without opening a browser.
+- View video information and metadata.
+- Add individual search results to the download queue.
+- Add multiple or all search results to the queue.
+- Stream selected search results directly.
+- Fetch and inspect content from supported URLs.
+
+### 🎬 Video & Audio Controls
+- Select media type and quality.
+- Configure video and audio formats.
+- Choose preferred codecs.
+- Customize container and file extensions.
+- Configure audio quality and bitrate.
+- Fetch available formats and qualities from individual URLs.
+- Select subtitle languages.
+- Download subtitles independently.
+- Configure thumbnail downloading.
+- Control format selection and media processing.
+
+### 📡 Live Streaming & Playback
+- Stream supported media directly to external players.
+- Live-stream URLs without downloading the entire media file.
+- Support for MPV and VLC playback.
+- Select a preferred media player when multiple players are detected.
+
+### ⚙️ Advanced Configuration
+- Extensive yt-dlp configuration options.
+- Download speed limits.
+- Proxy configuration.
+- Browser impersonation settings.
+- Retry and delay controls.
+- Network and connection settings.
+- Download filters based on upload date, file size, duration, and other criteria.
+- SponsorBlock configuration for supported YouTube content.
+- Cookie configuration and browser cookie integration.
+- Custom ffmpeg location.
+- Configuration conflict detection.
+- Filter testing before downloading.
+
+### 👤 Profiles & Settings
+- Save and load download configurations.
+- Maintain multiple download profiles.
+- Quickly switch between different download setups.
+- Persistent application settings.
+- Configuration management without manually editing command arguments.
+
+### 🎨 Themes & Interface
+- Multiple interface themes.
+- Customizable appearance.
+- Theme configuration and management.
+- A dedicated Themes tab.
+- Compact interface mode.
+- Scrollable configuration areas for easier navigation.
+
+### 📅 Scheduling
+- Schedule recurring or predefined download jobs.
+- Configure scheduled tasks using saved settings.
+- Automate download operations.
+- Manage scheduled jobs through the graphical interface.
+
+### 📋 Logging & Diagnostics
+- Execution logs.
+- Download activity tracking.
+- Error reporting and diagnostic information.
+- Dependency and requirement checking.
+- Logging of previously silent failures.
+- Built-in update checking.
+- Keyboard shortcuts for common operations.
+
+---
+
+## Screenshots
+<img width="359" height="322" alt="image" src="https://github.com/user-attachments/assets/6d598114-b777-4874-b657-f837b2011081" />
+<img width="359" height="322" alt="image" src="https://github.com/user-attachments/assets/9c3ddee1-1a2e-4bac-a7a2-91e6fb10dde2" />
+<img width="359" height="322" alt="image" src="https://github.com/user-attachments/assets/a493ccef-33e5-4d57-8d8c-606f0688acb7" />
+<img width="359" height="322" alt="image" src="https://github.com/user-attachments/assets/5f6d8eda-4076-4456-9ef3-dd92615ff950" />
+<img width="359" height="322" alt="image" src="https://github.com/user-attachments/assets/eb1d4b3d-bee5-48b2-a0fe-10c864ee9b8a" />
+<img width="359" height="322" alt="image" src="https://github.com/user-attachments/assets/3074f4b2-3403-4862-91f5-b70f48774415" />
+
+<!-- Add screenshots here when available -->
+
+---
+
+## Requirements
+
+The application is designed exclusively for **Windows**.
+
+| Component | Requirement | Purpose |
+|---|---|---|
+| Python | Python 3.x | Runs the application |
+| yt-dlp | Required | Media downloading, extraction, and streaming |
+| ffmpeg | Recommended | Media processing, merging, conversion, and related operations |
+| JavaScript Runtime | Recommended/required for certain extraction features | Supports yt-dlp JavaScript-dependent extraction |
+| MPV | Optional | Media streaming and playback |
+| VLC | Optional | Media streaming and playback |
+
+Some features may require additional dependencies or specific versions of the components above.
+
+The application includes a dependency checker to help identify missing or improperly configured components.
 
 ---
 
