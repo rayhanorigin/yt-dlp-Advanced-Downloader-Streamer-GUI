@@ -176,13 +176,13 @@ The app stores its configuration, profiles, scheduled jobs, search/URL history, 
 ---
 ## 🪡 Build Executable
 ### 1. Open CMD ###
-### 2. Install Pyinstaller ###
+### 2. Install requirements ###
 ```bash
-pip install pyinstaller
+pip install pyinstaller pystray pillow
 ```
 ### 3. Build EXE ###
 ```bash
-pyinstaller --onefile --windowed --name "yt-dlp Advanced Downloader" --icon=icon.ico --add-data "icon.ico;." Downloader_Script.py
+pyinstaller --onefile --windowed --name "yt-dlp Advanced Downloader"--add-data Downloader_Script.py
 ```
 ---
 
