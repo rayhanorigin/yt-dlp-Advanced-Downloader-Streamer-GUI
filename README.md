@@ -1,10 +1,11 @@
-# yt-dlp Advanced Downloader & Streamer GUI
+<h1 align="center">yt-dlp Advanced Downloader & Streamer GUI</h1>
 
-A feature-rich Windows desktop application built with Python and Tkinter that provides a graphical interface for [yt-dlp](https://github.com/yt-dlp/yt-dlp). Designed to make downloading, searching, streaming, and managing media easier without having to manually work with command-line arguments.
+A feature-rich desktop application built with Python and Tkinter that provides a graphical interface for [yt-dlp](https://github.com/yt-dlp/yt-dlp). Designed to make downloading, searching, streaming, and managing media easier without having to manually work with command-line arguments.
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Version-3.6-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Version-3.8-blue?style=for-the-badge">
   <img src="https://img.shields.io/badge/Platform-Windows-blue?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Linux-blue?style=for-the-badge">
   <img src="https://img.shields.io/badge/Python-3.x-yellow?style=for-the-badge">
   <img src="https://img.shields.io/badge/Powered%20By-yt--dlp-red?style=for-the-badge">
 </p>
@@ -13,7 +14,7 @@ A feature-rich Windows desktop application built with Python and Tkinter that pr
 
 ## Overview
 
-**yt-dlp Advanced Downloader & Streamer GUI** is a Windows application designed to simplify media downloading and streaming through a customizable graphical interface.
+**yt-dlp Advanced Downloader & Streamer GUI** is a application designed to simplify media downloading and streaming through a customizable graphical interface.
 
 It provides advanced download controls, video search, queue management, batch processing, streaming playback, profiles, scheduling, filtering, and a wide range of yt-dlp configuration options — all accessible from a single application.
 
@@ -108,20 +109,18 @@ Whether you're downloading a single video, managing multiple downloads, searchin
 ---
 
 ## Screenshots
-<img width="359" height="322" alt="image" src="https://github.com/user-attachments/assets/6d598114-b777-4874-b657-f837b2011081" />
-<img width="359" height="322" alt="image" src="https://github.com/user-attachments/assets/9c3ddee1-1a2e-4bac-a7a2-91e6fb10dde2" />
-<img width="359" height="322" alt="image" src="https://github.com/user-attachments/assets/a493ccef-33e5-4d57-8d8c-606f0688acb7" />
-<img width="359" height="322" alt="image" src="https://github.com/user-attachments/assets/5f6d8eda-4076-4456-9ef3-dd92615ff950" />
-<img width="359" height="322" alt="image" src="https://github.com/user-attachments/assets/eb1d4b3d-bee5-48b2-a0fe-10c864ee9b8a" />
-<img width="359" height="322" alt="image" src="https://github.com/user-attachments/assets/3074f4b2-3403-4862-91f5-b70f48774415" />
+<img width="159" height="122" alt="image" src="https://github.com/user-attachments/assets/6d598114-b777-4874-b657-f837b2011081" />
+<img width="159" height="122" alt="image" src="https://github.com/user-attachments/assets/9c3ddee1-1a2e-4bac-a7a2-91e6fb10dde2" />
+<img width="159" height="122" alt="image" src="https://github.com/user-attachments/assets/a493ccef-33e5-4d57-8d8c-606f0688acb7" />
+<img width="159" height="122" alt="image" src="https://github.com/user-attachments/assets/5f6d8eda-4076-4456-9ef3-dd92615ff950" />
+<img width="159" height="122" alt="image" src="https://github.com/user-attachments/assets/eb1d4b3d-bee5-48b2-a0fe-10c864ee9b8a" />
+<img width="159" height="122" alt="image" src="https://github.com/user-attachments/assets/3074f4b2-3403-4862-91f5-b70f48774415" />
 
 <!-- Add screenshots here when available -->
 
 ---
 
 ## Requirements
-
-The application is designed exclusively for **Windows**.
 
 | Component | Requirement | Purpose |
 |---|---|---|
@@ -142,8 +141,8 @@ The application includes a dependency checker to help identify missing or improp
 
 1. **Download the tool**
 2. **Install the required tools**
-   - [Download yt-dlp.exe](https://github.com/yt-dlp/yt-dlp/releases) and make sure it's on your PATH, or placed next to the script
-   - [Download ffmpeg](https://ffmpeg.org/download.html) (Windows builds) and add it to your PATH
+   - [Download yt-dlp](https://github.com/yt-dlp/yt-dlp/releases) and make sure it's on your PATH, or placed next to the script
+   - [Download ffmpeg](https://ffmpeg.org/download.html) and add it to your PATH
    - (Optional) Install [Node.js](https://nodejs.org/) for the JS runtime
    - (Optional) Install [mpv](https://mpv.io/) and/or [VLC](https://www.videolan.org/vlc/) for streaming
 
@@ -152,7 +151,7 @@ The application includes a dependency checker to help identify missing or improp
    python yt-dlp.Advanced.Downloader.py
 ```
 
-   Or grab a pre-built `.exe` from the [Releases page](https://github.com/rayhanorigin/yt-dlp-Advanced-Downloader-Streamer-GUI/releases), if available, to run it without installing Python.
+   Or grab a pre-built Executable from the [Releases page](https://github.com/rayhanorigin/yt-dlp-Advanced-Downloader-Streamer-GUI/releases), to run it without installing Python.
 
 ---
 
@@ -174,7 +173,7 @@ Press **F1** inside the app at any time for the full keyboard shortcut reference
 The app stores its configuration, profiles, scheduled jobs, search/URL history, and column layout in a config folder next to the executable/script, and migrates automatically from older legacy file locations when detected. Use the **History & Saved Logs Persistence Controls** section in Advanced Settings to clear search or URL history at any time.
 
 ---
-## 🪡 Build Executable
+## Building a Windows executable
 ### 1. Open CMD ###
 ### 2. Install requirements ###
 ```bash
@@ -192,6 +191,87 @@ pyinstaller --onefile --windowed --name "yt-dlp Advanced Downloader"--add-data D
 - [ffmpeg](https://ffmpeg.org/) — media processing and remuxing
 - [Python](https://www.python.org/) & Tkinter — application framework
 - [Node.js](https://nodejs.org/) (or other JS runtimes) — JS challenge solving support
+
+## 🫶 Linux Support
+
+3.8 Release lets **yt-dlp Advanced Downloader** run natively on Linux. The app keeps working on Windows exactly as before; everything below is what was added or changed so that it also works on Linux.
+
+Tested on Debian.
+
+## Requirements
+
+**System packages** (Debian / Ubuntu names; use your distribution's equivalents):
+
+```bash
+sudo apt install python3 python3-tk python3-pil.imagetk ffmpeg xdg-utils libnotify-bin
+```
+
+| Package | Used for |
+|---|---|
+| `python3-tk` | The GUI (required) |
+| `python3-pil.imagetk` | Thumbnails (Debian/Ubuntu ship `ImageTk` separately from Pillow) |
+| `ffmpeg` | Merging, converting, embedding |
+| `xdg-utils` | Opening files, folders and links |
+| `libnotify-bin` | Desktop notifications (`notify-send`) |
+
+You also need **yt-dlp** itself, from your package manager, `pipx`, or the standalone binary placed next to the script or on your `PATH`. For YouTube, yt-dlp needs a JavaScript runtime: **Deno 2.3+** or **Node.js 22+**.
+
+**Optional Python packages:**
+
+```bash
+pip install tkinterdnd2 pystray pillow curl_cffi
+```
+
+| Package | Used for |
+|---|---|
+| `tkinterdnd2` | Drag and drop (the app starts without it if it fails to load) |
+| `pystray` + `pillow` | Minimize to system tray |
+| `curl_cffi` | enables "Browser impersonation" for 403 / bot-block errors |
+
+**Optional players:** `mpv` or `vlc` for streaming.
+
+## Running
+
+```bash
+python3 Downloader-Script.py
+```
+
+Config, logs and downloads are stored next to the script, the same as on Windows. To get a window icon, place an `icon.png` beside the script.
+
+
+#
+### Check Requirements
+
+The requirements window shows Linux install hints (`sudo apt install ffmpeg`, and so on) and links to the right download pages instead of Windows ones.
+
+## Building a Linux executable
+
+Build on Linux (PyInstaller cannot cross-compile from Windows), ideally on the oldest distribution you want to support, because the binary links against the build machine's glibc.
+
+```bash
+sudo apt install python3-tk python3-venv binutils
+python3 -m venv venv && source venv/bin/activate
+pip install pyinstaller tkinterdnd2 pystray pillow
+
+pyinstaller --clean --onefile --noconsole \
+  --name "yt-dlp Advanced Downloader" \
+  --hidden-import PIL._tkinter_finder \
+  "Downloader-Script.py"
+
+```
+
+The result is `dist/yt-dlp-Advanced-Downloader`. Note that `--add-data` uses `:` on Linux (not `;`), and `--icon` has no effect on Linux executables.
+
+yt-dlp, ffmpeg and mpv/vlc are not bundled; the app finds them on your `PATH` or next to the executable.
+
+## Known limitations
+
+- **Wake from sleep** requires root (the Linux RTC alarm needs it). Without root the option is disabled.
+- **Tray on GNOME** needs the AppIndicator extension. If the tray icon does not show up, launching the app a second time brings the window back.
+- **Hibernate** depends on your system being set up for it.
+- **Window focus.** Some desktops may flash or highlight the window instead of focusing it when it is restored by a second launch.
+
+
 
 ---
 
